@@ -2,7 +2,7 @@
 
 import useSubscribersAnalytics from "@/shared/hooks/useSubscribersAnalytics";
 import { ICONS } from "@/shared/utils/icons";
-  
+
 const DashboardOverViewCard = () => {
   const { subscribersData, loading } = useSubscribersAnalytics();
   const lastMonthSubscribers =

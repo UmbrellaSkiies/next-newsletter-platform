@@ -11,7 +11,7 @@ interface Props {
 AWS.config.update({
   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
   secretAccessKey: process.env.AWS_SECRET_KEY_ID,
-  region: "us-east-1",
+  region: "eu-north-1",
 });
 
 AWS.config.getCredentials(function (error) {
@@ -22,7 +22,7 @@ AWS.config.getCredentials(function (error) {
 
 const ses = new AWS.SES({ apiVersion: "2010-12-01" });
 
-const adminMail = "support@becodemy.com";
+const adminMail = "thomasneo946@gmail.com";
 
 // Create a transporter of nodemailer
 const transporter = nodemailer.createTransport({
