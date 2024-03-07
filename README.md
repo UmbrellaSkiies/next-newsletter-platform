@@ -1,6 +1,6 @@
-<h1 align="center" id="title">Travel Planner</h1>
+<h1 align="center" id="title">SaaS Email Newsletter</h1>
 
-<p id="description">Travel Planner App with Live Web Scraping from various sources using Bright Data Scraping browser.</p>
+<p id="description">A Software as a Service (SaaS) Email Newsletter is a digital platform or service that enables businesses and individuals to create, manage, and distribute email newsletters efficiently and effectively. These newsletters serve as powerful communication tools, allowing organizations to engage with their audience, share valuable content, promote products or services, and build brand awareness.</p>
 
 <h2>🧐 Features</h2>
 
