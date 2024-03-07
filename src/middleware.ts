@@ -2,7 +2,7 @@ import { authMiddleware } from "@clerk/nextjs";
 
 import { NextRequest, NextResponse, NextFetchEvent } from "next/server";
 
-export function middleware(req: NextRequest, event: NextFetchEvent) {
+/*export function middleware(req: NextRequest, event: NextFetchEvent) {
   // Create a response object for OPTIONS requests or a default response for others
   let response = req.method === "OPTIONS" ? new NextResponse(null, {
     status: 204,
@@ -21,7 +21,7 @@ export function middleware(req: NextRequest, event: NextFetchEvent) {
   }
 
   return response;
-}
+}*/
 
 export default authMiddleware({
   publicRoutes: ["/sign-in", "/sign-up", "/api/webhook", "/api/subscribe"],

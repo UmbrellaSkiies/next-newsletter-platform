@@ -1,16 +1,17 @@
 "use client";
-import { useUser } from "@clerk/nextjs";
 
 import DashboardOverViewCard from "@/shared/components/cards/overview.card";
 import SubscribersChart from "@/shared/components/charts/subscribers.chart";
 import { Button } from "@nextui-org/react";
 import { ICONS } from "@/shared/utils/icons";
+import { useUser } from "@clerk/nextjs";
 import { useState } from "react";
 import toast from "react-hot-toast";
 import Link from "next/link";
 
 const Main = () => {
   const { user } = useUser();
+
   const [copied, setCopied] = useState(false);
 
   const handleCopyClick = () => {
@@ -32,9 +33,11 @@ const Main = () => {
       <h1 className="text-2xl text-surface-900 font-medium">
         Hi {user?.fullName} 👋
       </h1>
+
       <p className="opacity-[.7] text-sm pt-2">
         Here&apos;s how your publication is doing
       </p>
+
       <div className="w-full flex">
         <div className="w-[65%] min-h-[88vh] pr-5">
           <br />
@@ -42,6 +45,7 @@ const Main = () => {
           <br />
           <SubscribersChart />
         </div>
+
         <div className="w-[35%] p-5">
           {/* create newsletter button */}
           <div className="w-full flex justify-end">
@@ -51,6 +55,7 @@ const Main = () => {
             </Button>
           </div>
           <br />
+
           {/* resources */}
           <div>
             <h5 className="text-xl font-medium">Resources</h5>

@@ -3,9 +3,9 @@
 import { NextUIProvider } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import { useUser } from "@clerk/nextjs";
-import DashboardSidebar from "@/shared/widgets/dashboard/sidebar/dashboard.sidebar";
 import { Toaster } from "react-hot-toast";
 import { addStripe } from "@/actions/add.stripe";
+import DashboardSidebar from "@/shared/widgets/dashboard/sidebar/dashboard.sidebar";
 
 interface ProviderProps {
   children: React.ReactNode;
